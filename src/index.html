@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="BRCD">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="デザイナー採用情報｜株式会社ビズリーチ">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="株式会社ビズリーチは、会社の圧倒的なスピードの成長をけん引するデザイナー、フロントエンドエンジニアを探しています。">
+  <meta property="og:url" content="https://www.bizreach.co.jp/recruit/designer/">
+  <meta property="og:image" content="/img/recruit/designer/ogimage.png">
+  <meta property="og:site_name" content="デザイナー採用情報｜株式会社ビズリーチ">
+  <meta name="description" content="株式会社ビズリーチは、会社の圧倒的なスピードの成長をけん引するデザイナー、フロントエンドエンジニアを探しています。">
+  <meta name="keywords" content="ビズリーチ,bizreach,採用,求人,デザイナー,UI/UXデザイナー,フロントエンドエンジニア">
+  <title>デザイナー採用情報｜株式会社ビズリーチ</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700">
+  <link rel="stylesheet" href="/css/recruit/designer/app.css">
+  <link rel="shortcut icon" href="/img/recruit/designer/favicon.ico">
+  <script src="/js/recruit/designer/jquery.min.js"></script>
+  <script src="/js/recruit/designer/ScrollMagic.min.js"></script>
+  <script src="/js/recruit/designer/angular.min.js"></script>
+  <script src="/js/recruit/designer/angular-messages.min.js"></script>
+  <script src="/js/recruit/designer/validate.min.js"></script>
+  <script src="/js/recruit/designer/app.js"></script>
+</head>
+<body ng-controller="MainController as main" id="top">
+  <div class="md-wrapper">
+    <header id="jsi-header">
+      <div class="md-header-inner">
+        <h1><a href="javascript: void(0);" ng-click="main.scrollTo($event, 'top')"><img src="/img/recruit/designer/header.bizreach.svg" alt=""></a></h1>
+        <nav>
+          <ul>
+            <li><a href="#philosophy" ng-click="main.scrollTo($event, 'philosophy')">Philosophy</a></li>
+            <li><a href="#environment" ng-click="main.scrollTo($event, 'environment')">Environment</a></li>
+            <li><a href="#members" ng-click="main.scrollTo($event, 'members')">Members</a></li>
+            <li><a href="#positions" ng-click="main.scrollTo($event, 'positions')">Positions</a></li>
+            <li><a href="#services" ng-click="main.scrollTo($event, 'services')">Services</a></li>
+            <li><a href="#entry" ng-click="main.scrollTo($event, 'entry')">Entry</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="md-mainvisual md-section" id="initial">
+        <div class="md-mainvisual-background" id="jsi-mvbackground">
+          <img ng-src="{{imageUrl}}" alt="" ng-repeat="imageUrl in main.imageUrls.mvBackground">
+        </div>
+        <div class="md-mainvisual-images" id="jsi-logo">
+          <img ng-src="{{imageUrl}}" alt="" ng-repeat="imageUrl in main.imageUrls.mainLogoGrid">
+          <div class="md-mainvisual-images-bar" id="jsi-logobar"></div>
+        </div>
+        <div class="md-mainvisual-type" id="jsi-logotypes">
+          <img ng-src="{{imageUrl}}" alt="" ng-repeat="imageUrl in main.imageUrls.logoTypes">
+        </div>
+        <p id="jsi-mvparagraph">
+          デザイナー、フロントエンドエンジニア 募集
+        </p>
+        <a href="javascript: void(0);" class="md-button" id="jsi-mventrybutton" ng-click="main.scrollTo($event, 'entry')">Entry</a>
+        <a href="#intro" class="md-next md-mainvisual-next" ng-click="main.scrollTo($event, 'intro')"><img src="/img/recruit/designer/arrow.next.svg" alt=""></a>
+      </div>
+      <section class="md-section purple" id="intro">
+        <div class="md-section-inner">
+          <p class="md-section-description intro">
+            ビズリーチは、会社の圧倒的なスピードの成長を<br>
+            けん引するデザイナーを探しています
+          </p>
+        </div>
+      </section>
+      <section class="md-section" id="philosophy">
+        <div class="md-section-inner">
+          <h2>
+            Philosophy
+            <span>大切にしていること</span>
+          </h2>
+          <p class="md-section-description">
+            ビズリーチのデザイナーは、戦略的に成果が出せるデザインを追求しています
+          </p>
+          <div class="md-section-body">
+            <div class="md-itemlist">
+              <section>
+                <h3>大前提にあるのは情報設計</h3>
+                <p>
+                  事業の本質を見極め、目的達成のために何を提供すべきかを考え、情報の整理をした上で、戦略的に成果が出せるデザインをしています。
+                </p>
+              </section>
+              <section>
+                <h3>データドリブンなデザイン</h3>
+                <p>
+                  圧倒的改善スピードで事業目標を達成するため、デザインしたプロダクトの利用データを軸に、データドリブンな制作を促進しています。
+                </p>
+              </section>
+              <section>
+                <h3>職域を超えた動き</h3>
+                <p>
+                  デザイナーという枠にとらわれて仕事をするのではなく、顧客にとって正しいことが何かを追求し、それぞれの強みを存分に発揮し全力を尽くしています。
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="md-section gray" id="environment">
+        <div class="md-section-inner">
+          <h2>
+            Environment
+            <span>生産性を高め、成長し続けるための環境</span>
+          </h2>
+          <div class="md-section-body">
+            <div class="md-itemlist">
+              <section>
+                <figure><img src="/img/recruit/designer/icon.review.png" alt=""></figure>
+                <h3>デザインレビュー会</h3>
+                <p>
+                  目的達成やユーザー体験などの視点からフィードバックしあうことで、デザインの質を向上させ、同時に若手デザイナーの育成の場を作っています。
+                </p>
+              </section>
+              <section>
+                <figure><img src="/img/recruit/designer/icon.grouplearning.png" alt=""></figure>
+                <h3>輪講</h3>
+                <p>
+                  デザインや設計についての考えをデザイナー同士で共通化するために、定期的に心理学や人間中心設計などの書籍について発表しあっています。
+                </p>
+              </section>
+              <section>
+                <figure><img src="/img/recruit/designer/icon.dted.png" alt=""></figure>
+                <h3>D-TED</h3>
+                <p>
+                  Designer's TEDと称し、チームへの発信の場として業務で得た知識や得意分野についてプレゼンテーションを行っています。
+                </p>
+              </section>
+              <section>
+                <figure><img src="/img/recruit/designer/icon.insighthack.png" alt=""></figure>
+                <h3>Insight Hack!!</h3>
+                <p>
+                  作り手の視点ではなく、ユーザー目線のクリエイティブを作るため、定期的にユーザーインタビューを実施し、インサイトを知る取り組みを行っています。
+                </p>
+              </section>
+              <section>
+                <figure><img src="/img/recruit/designer/icon.creatorstime.png" alt=""></figure>
+                <h3>クリエイターズタイム</h3>
+                <p>
+                  エンジニアやデザイナーがより集中して働けるように、1日最大4時間の連続した作業時間を確保できる制度です。
+                </p>
+              </section>
+              <section>
+                <figure><img src="/img/recruit/designer/icon.quietroom.png" alt=""></figure>
+                <h3>クワイエットルーム</h3>
+                <p>
+                  会話が禁止されている特別なスペースです。誰もが利用することができ、制作に集中したい場合などに利用されています。
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="md-section" id="members">
+        <div class="md-section-inner">
+          <h2>
+            Members
+            <span>メンバー紹介</span>
+          </h2>
+          <div class="md-section-body">
+            <p class="md-question">ビズリーチで成し遂げたいことは？</p>
+            <ul class="md-members">
+              <li>
+                <img src="/img/recruit/designer/members.mii.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    最強のデザインチームで、感情を揺さぶるサービス、ブランドを創りたい
+                  </p>
+                  <p>
+                    <small>
+                      クリエイティブディレクター<br>
+                      三井 拓郎
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.nao.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    デザイナーの枠からめいっぱいはみ出て自分もサービスも変化をつづけたい
+                  </p>
+                  <p>
+                    <small>
+                      UXディレクター<br>
+                      佐々木 奈央
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.chuck.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    関係する施策、サービスすべてを人間中心設計で成功に導きたい
+                  </p>
+                  <p>
+                    <small>
+                      アシスタントディレクター<br>
+                      古賀 好二郎
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.zackymarie.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    デザイナーが最も活躍することで、デザイナーが主導の日本企業を増やしたい
+                  </p>
+                  <p>
+                    <small>
+                      デザイナー<br>
+                      小松崎 麻里
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.edacchi.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    フロントエンドエンジニアリングで事業にインパクトを与え、新しい働き方を確立したい
+                  </p>
+                  <p>
+                    <small>
+                      フロントエンドエンジニア<br>
+                      小枝 優駿
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.totti.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    説得力のあるデザインで、ビジネスを加速させたい
+                  </p>
+                  <p>
+                    <small>
+                      デザイナー<br>
+                      戸谷 慧
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.ume.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    フロントエンドの枠を超え、より良いユーザー体験を追求して価値のあるサービスを創りたい
+                  </p>
+                  <p>
+                    <small>
+                      フロントエンドエンジニア<br>
+                      梅林 千恵
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.vaseline.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    マーケティングチームと一緒に「強い戦略」と「工夫のあるクリエイティブ」を作り、勝ちたい
+                  </p>
+                  <p>
+                    <small>
+                      アートディレクター<br>
+                      岩瀬 雄一郎
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.galileo.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    ビジネス・テクノロジー・デザインの力で、社会に新たな価値を提供し、イノベーションを起こしたい
+                  </p>
+                  <p>
+                    <small>
+                      マネージャー / IA<br>
+                      福山 憲司
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.jack.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    全媒体でのデザインを突き詰め、強固なブランディングを作りたい
+                  </p>
+                  <p>
+                    <small>
+                      デザイナー<br>
+                      米増 佳樹
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.wakap.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    デザイン×マーケティングで、次の時代のビジネスを創りたい
+                  </p>
+                  <p>
+                    <small>
+                      デザイナー<br>
+                      若山 剛一
+                    </small>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="/img/recruit/designer/members.katie.jpg" alt="">
+                <div class="md-members-profile">
+                  <p>
+                    ユーザー体験を重視し、より心地よいもの、より使いやすいものを創りたい
+                  </p>
+                  <p>
+                    <small>
+                      デザイナー<br>
+                      Lu Chialin
+                    </small>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="md-section darkgray" id="positions">
+        <div class="md-section-inner">
+          <h2>
+            Positions
+            <span>募集職種</span>
+          </h2>
+          <div class="md-section-body md-tab">
+            <ul class="md-tab-list">
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 0 }" ng-click="main.changeTab(0)">UIデザイナー</a></li>
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 1 }" ng-click="main.changeTab(1)">IA/UXデザイナー</a></li>
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 2 }" ng-click="main.changeTab(2)">アートディレクター</a></li>
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 3 }" ng-click="main.changeTab(3)">クリエイティブ<br>ディレクター</a></li>
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 4 }" ng-click="main.changeTab(4)">フロントエンド<br>エンジニア</a></li>
+              <li><a href="javascript: void(0);" ng-class="{ current: main.positionTabIndex === 5 }" ng-click="main.changeTab(5)">シニアフロントエンド<br>エンジニア</a></li>
+            </ul>
+            <div class="md-tab-contents" id="jsi-tab-contents">
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(0) === 'current',
+                left: main.checkTabPosition(0) === 'left',
+                right: main.checkTabPosition(0) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>UIデザイナー</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      UIデザイナーとして、当社が運営する事業のUI/UX設計をおまかせします。<br>
+<br>
+                      ビズリーチのデザイナーは、表面上のUIをデザインするだけではなく、社内のPMと一緒に企画立案から携わり、プロジェクトメンバーと一緒により効果的なUI/UXを提案します。<br>
+                      サービスを成長させるために、プロダクトをリリースして終わりではなく、ユーザーの反応ウォッチして分析し、サービス改善をチームで行います。<br>
+<br>
+                      『自分の作ったプロダクトで世の中にインパクトを与える』ことに興味をお持ちいただけるかたはぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>PhotoshopやIllustratorなどを利用して、デザイン制作を行うスキルがある方</li>
+                        <li>論理的なアプローチでUIを考えることができる方</li>
+                        <li>積極的にインタラクションも含めた提案ができる方</li>
+                        <li>課題解決に積極的に取り組める方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>Webデザイナーとして5年以上の実務経験がある方</li>
+                        <li>自社サービスの開発に関わりたい方</li>
+                        <li>マネジメント経験がある方</li>
+                        <li>ゼロからサービスを開発、立ち上げた経験がある方</li>
+                        <li>とにかく新しいWebサービスやアプリが好きな方</li>
+                        <li>自ら積極性と責任感を持って仕事に取り組める方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(1) === 'current',
+                left: main.checkTabPosition(1) === 'left',
+                right: main.checkTabPosition(1) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>IA/UXデザイナー（マネージャー・リーダー候補）</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      当社のいずれかのサービスにおいてUI/UX設計、サービスデザイン、ビジュアルデザイン、運用業務を担当していただきます。<br>
+                      社内の企画、マーケティング担当、エンジニア等と連携し、プロジェクトを進めていきます。ご経験によっては、ブランディングやメンバーマネジメントにも関わっていただく他、新規サービスも多く立ち上げているので、企画から導線設計、サイト全体を通したデザインにも関わっていただきます。<br>
+<br>
+                      営業、企画、設計、UIデザイン、開発、運用の全てのメンバーが同じ事業部に在籍しており、要件定義から、設計、開発、リリースまでを迅速にこなすことができる体制になっています。異なる職種のプロフェッショナルがお互いのスキルを尊重する風土があり、日々フラットに意見を交わしています。スキルのオーバーラップも推奨していますし、ユーザーからのフィードバックも直接的に得られる環境です。<br>
+<br>
+                      キャリアアップを目指し、新しい事業、プロダクトを創っていきたい、という方はぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>デザイナーとしての実務経験5年以上の方</li>
+                        <li>Photoshop、Illustrator、HTML/CSSのサイト制作業務経験</li>
+                        <li>ワイヤーフレーム制作経験 </li>
+                        <li>状況や需要に応じて柔軟なデザインが出来るスキル </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>定性/定量調査、分析をはじめとしたUXデザインの実務経験</li>
+                        <li>StoryboardやProttなどを使用したプロトタイプ作成の実務経験</li>
+                        <li>クリエイティブディレクションの実務経験</li>
+                        <li>メンバーマネジメント経験のある方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(2) === 'current',
+                left: main.checkTabPosition(2) === 'left',
+                right: main.checkTabPosition(2) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>アートディレクター（新規事業/マネージャー候補）</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      ビジネス及びサービス、ブランドの目的を理解した上で、アートディレクターとしてデザインの方向性を定義しコンセプトデザインの提案、デザインの制作からクオリティ管理までをおまかせします。<br>
+                      ご経験によっては、ブランディングやメンバーマネジメントにも関わっていただく他、新規サービスも多く立ち上げているので、企画から導線設計、サイト全体を通したデザインにも関わっていただきます。<br>
+                      <br>
+                      『クリエイティブで戦略的なマーケティングを実現する』ことに興味をお持ちいただけるかたはぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>デザイナーとしての実務経験5年以上の方</li>
+                        <li>ブランドの世界観を理解し、デザインで表現できる方</li>
+                        <li>アートディレクターとしての実務経験がある方もしくは、目指している方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>若手デザイナーの育成経験のある方</li>
+                        <li>自ら積極性と責任感を持って仕事に取り組める方</li>
+                        <li>ディレクションだけではなく、自ら手を動かしチームをリードできる方</li>
+                        <li>マーケティングの観点から、事業をグロースさせた実績がある方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(3) === 'current',
+                left: main.checkTabPosition(3) === 'left',
+                right: main.checkTabPosition(3) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>クリエイティブディレクター（新規事業/マネージャー候補）</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      ビジネス及びサービス、ブランドの目的を理解した上で、クリエイティブディレクターとしてデザインの方向性を定義しコンセプトデザインの提案、デザインの制作からクオリティ管理、現場の指揮や育成、組織作りをおまかせします。<br>
+                      <br>
+                      『自分の作ったプロダクトで世の中にインパクトを与える』『クリエイティブで戦略的なマーケティングを実現する』ことに興味をお持ちいただけるかたはぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>デザイナーとしての実務経験5年以上の方</li>
+                        <li>ブランドの世界観を構築できる方</li>
+                        <li>クリエイティブディレクターとしての実務経験がある方もしくは、目指している方</li>
+                        <li>マーケティングの観点から、事業をグロースさせた実績がある方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>若手デザイナーの育成経験のある方</li>
+                        <li>自ら積極性と責任感を持って仕事に取り組める方</li>
+                        <li>課題に対して解決策を柔軟に導き出すことのできる方</li>
+                        <li>チームワーク活用し仕事を進めることのできる方</li>
+                        <li>コミュニケーションスキルが高く、ロジカルに思考することのできる方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(4) === 'current',
+                left: main.checkTabPosition(4) === 'left',
+                right: main.checkTabPosition(4) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>フロントエンドエンジニア</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      フロントエンドエンジニアとして、当社が運営する事業の改善をおまかせします。<br>
+                      <br>
+                      ビズリーチのフロントエンドエンジニアは、表面上のビジュアルデザインやアニメーションの実装だけではなく、メンテナンス性の高いHTML、CSS、JavaScript の設計にもこだわり、社内のPMと一緒に企画立案から携わり、プロジェクトメンバーと一緒により効果的なUI/UXを考えて実装まで行います。<br>
+                      サービスを成長させるために、プロダクトをリリースして終わりではなく、ユーザーの反応ウォッチして分析し、サービス改善をチームで行います。<br>
+                      <br>
+                      『自分の作ったプロダクトで世の中にインパクトを与える』ことに興味をお持ちいただけるかたはぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>jQuery、JavaScriptでの実務経験</li>
+                        <li>HTML5,CSS3でのコーディング経験</li>
+                        <li>UI/UXに関する知識・経験</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>フロントエンドエンジニアとしての実務経験5年以上の方</li>
+                        <li>Angular.js, React.jsなどのJavaScriptフレームワークを用いた開発経験がある方</li>
+                        <li>Gulp/Gruntなどを用いたフロントエンド開発環境の構築経験がある方</li>
+                        <li>MVCフレームワークを用いたWebアプリケーション開発経験がある方</li>
+                        <li>自社サービスに関わりたい方</li>
+                        <li>マネジメント経験がある方</li>
+                        <li>ゼロからサービスを開発、立ち上げた経験がある方</li>
+                        <li>新しい技術に敏感で自ら学ぶことができる人方</li>
+                        <li>自ら積極性と責任感を持って仕事に取り組める方</li>
+                        <li>課題解決に積極的に取り組める方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="md-tab-contents-item" ng-class="{ 
+                current: main.checkTabPosition(5) === 'current',
+                left: main.checkTabPosition(5) === 'left',
+                right: main.checkTabPosition(5) === 'right'
+              }">
+                <colgroup>
+                  <col width="170">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>職種</th>
+                    <td>シニアフロントエンドエンジニア（新規事業/マネージャー候補）</td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>正社員（中途採用）</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      非公開<br>
+                      業績により賞与年2回支給
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>仕事内容</th>
+                    <td>
+                      シニアフロントエンドエンジニアとして、当社が運営する事業の改善だけでなく、新しい技術導入やアーキテクチャ構築、メンバーの育成などをお任せします。<br>
+                      <br>
+                      ビズリーチのフロントエンドエンジニアは、表面上のビジュアルデザインやアニメーションの実装だけではなく、メンテナンス性の高いHTML、CSS、JavaScript の設計にもこだわり、社内のPMと一緒に企画立案から携わり、プロジェクトメンバーと一緒により効果的なUI/UXを考えて実装まで行います。<br>
+                      サービスを成長させるために、プロダクトをリリースして終わりではなく、ユーザーの反応ウォッチして分析し、サービス改善をチームで行います。<br>
+                      <br>
+                      『自分の作ったプロダクトで世の中にインパクトを与える』ことに興味をお持ちいただけるかたはぜひご応募ください。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>必須条件</th>
+                    <td>
+                      <ul>
+                        <li>Angular.js, React.jsなどのJavaScriptフレームワークを用いた開発経験がある方</li>
+                        <li>Gulp/Gruntなどを用いたフロントエンド開発環境の構築経験がある方</li>
+                        <li>MVCフレームワークを用いたWebアプリケーション開発経験がある方</li>
+                        <li>フロントエンドエンジニアとしての実務経験5年以上の方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>歓迎条件</th>
+                    <td>
+                      <ul>
+                        <li>自社サービスに関わりたい方</li>
+                        <li>マネジメント経験がある方</li>
+                        <li>ゼロからサービスを開発、立ち上げた経験がある方</li>
+                        <li>新しい技術に敏感で自ら学ぶことができる人方</li>
+                        <li>自ら積極性と責任感を持って仕事に取り組める方</li>
+                        <li>課題解決に積極的に取り組める方</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>フレックスタイム制 (コアタイム 10:00～16:00）</td>
+                  </tr>
+                  <tr>
+                    <th>休日・休暇</th>
+                    <td>有給休暇、年末年始休暇、慶弔休暇、産休・育休、週休2日制、土日祝日休み</td>
+                  </tr>
+                  <tr>
+                    <th>待遇・福利厚生</th>
+                    <td>交通費全額支給、社会保険完備、研修あり、社内表彰制度</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>
+                      本社 東京都 渋谷区渋谷2-15-1 渋谷クロスタワー12F<br>
+                      各路線渋谷駅から徒歩5分
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="md-section" id="services">
+        <div class="md-section-inner">
+          <h2>
+            Services
+            <span>ビズリーチはインターネットカンパニーです</span>
+          </h2>
+          <p class="md-section-description">
+            インターネットの力を活用し、世の中の選択肢と可能性を広げていくことが私たちのミッションです。<br>
+            多くのHR×Techの領域でサービスを展開し、その全てを自社開発するインターネットカンパニーです。<br>
+            創業8年間のうちに、社員数は2名から600名へ、事業数は1つから10を超える事業を急成長してきました。
+          </p>
+          <div class="md-section-body">
+            <ul class="md-services">
+              <li class="bizreach"><img src="/img/recruit/designer/logo.bizreach.svg" alt="BIZREACH"></li>
+              <li class="bizreachwoman"><img src="/img/recruit/designer/logo.bizreachwoman.svg" alt="BIZREACH WOMAN"></li>
+              <li class="careertrek"><img src="/img/recruit/designer/logo.careertrek.svg" alt="careertrek"></li>
+              <li class="stanby"><img src="/img/recruit/designer/logo.stanby.svg" alt="スタンバイ"></li>
+              <li class="regionup"><img src="/img/recruit/designer/logo.regionup.svg" alt="REGION UP"></li>
+              <li class="hrmos"><img src="/img/recruit/designer/logo.hrmos.svg" alt="HRMOS ハーモス"></li>
+              <li class="campus"><img src="/img/recruit/designer/logo.campus.svg" alt="BIZREACH CAMPUS"></li>
+              <li class="bizhint"><img src="/img/recruit/designer/logo.bizhint.svg" alt="BIZHINT HR"></li>
+              <li class="nikureach"><img src="/img/recruit/designer/logo.29reach.svg" alt="ニクリーチ"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="md-section purple" id="entry">
+        <div class="md-section-inner">
+          <h2>
+            Entry
+            <span>まずは気軽にお話ししてみませんか？</span>
+          </h2>
+          <p class="md-section-description">
+            ビジネスパーソンには選択肢と可能性の提供を。企業には採用のあり方、タレントマネジメントの新しい形を示すことで生産性向上を。今後も「テクノロジーの力で、ヒトを輝かせる」という想いのもと、業界のゲームチェンジを行っていきたいと考えています。<br>
+            <br>
+            2016年37.3億円、同年10月11.5億円と、これまで合計50億を超える資金調達しました。更なる飛躍を目指して、新しい事業、プロダクトを創っていきたい、という方はぜひご連絡ください。
+          </p>
+          <div class="md-section-body">
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" name="entryForm">
+              <input type="hidden" name="oid" value="00D28000001irt6">
+              <input type="hidden" name="retURL" value="https://www.bizreach.co.jp/recruit/designer/#applied">
+              <input type="hidden" name="00N2800000F1LaZ" value="キャリア">
+              <input type="hidden" name="00N2800000F0ZQ9" value="新規">
+              <input type="hidden" name="00N2800000FTYT0" value="デザイナー採用サイト">
+              <table class="md-form">
+                <colgroup>
+                  <col width="200">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>氏名</th>
+                    <td>
+                      <label>
+                        <input class="s" type="text" name="last_name" ng-model="last_name" placeholder="姓" required>
+                      </label>
+                      <label>
+                        <input class="s" type="text" name="first_name" ng-model="first_name" placeholder="名" required>
+                      </label>
+                      <ul ng-messages="entryForm.last_name.$error" ng-if="entryForm.last_name.$dirty && entryForm.last_name.$invalid">
+                        <li ng-message="required">姓を入力してください</li>
+                      </ul>
+                      <ul ng-messages="entryForm.first_name.$error" ng-if="entryForm.first_name.$dirty && entryForm.first_name.$invalid">
+                        <li ng-message="required">名を入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>年齢</th>
+                    <td>
+                      <input type="hidden" name="00N2800000FVIT0" ng-value="age">
+                      <label>
+                        <input class="s" type="text" name="age" ng-model="age" placeholder="30" maxlength="2" required ui-validate="{ number: 'main.validateNumber($value)' }">
+                        歳
+                      </label>
+                      <ul ng-messages="entryForm.age.$error" ng-if="entryForm.age.$dirty && entryForm.age.$invalid">
+                        <li ng-message="required">年齢を入力してください</li>
+                        <li ng-message="number">年齢は半角数字で入力してください</li>
+                        <li ng-message="maxlength">経験年数は2桁までの数字で入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="radio">
+                    <th>性別</th>
+                    <td>
+                      <div class="md-radio">
+                        <input type="radio" id="gender_male" name="00N2800000FStu8" value="男性" checked>
+                        <label for="gender_male">
+                          男性
+                        </label>
+                      </div>
+                      <div class="md-radio">
+                        <input type="radio" id="gender_female" name="00N2800000FStu8" value="女性">
+                        <label for="gender_female">
+                          女性
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>職種</th>
+                    <td>
+                      <input type="hidden" name="00N2800000G81nb" ng-value="jobcategory">
+                      <input type="text" name="jobcategory" ng-model="jobcategory" placeholder="職種を入力" required>
+                      <ul ng-messages="entryForm.jobcategory.$error" ng-if="entryForm.jobcategory.$dirty && entryForm.jobcategory.$invalid">
+                        <li ng-message="required">職種を入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>経験年数</th>
+                    <td>
+                      <input type="hidden" name="00N2800000G81oA" ng-value="career">
+                      <label>
+                        <input class="s" type="text" name="career" ng-model="career" placeholder="5" maxlength="2" required ui-validate="{ number: 'main.validateNumber($value)' }">
+                        年
+                      </label>
+                      <ul ng-messages="entryForm.career.$error" ng-if="entryForm.career.$dirty && entryForm.career.$invalid">
+                        <li ng-message="required">経験年数を入力してください</li>
+                        <li ng-message="number">経験年数は半角数字で入力してください</li>
+                        <li ng-message="maxlength">経験年数は2桁までの数字で入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>社名</th>
+                    <td>
+                      <input class="l" type="text" name="company" ng-model="company" placeholder="社名を入力" required>
+                      <ul ng-messages="entryForm.company.$error" ng-if="entryForm.company.$dirty && entryForm.company.$invalid">
+                        <li ng-message="required">社名を入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>部署／役職</th>
+                    <td>
+                      <input type="hidden" name="00N2800000FFAji" ng-value="department">
+                      <input type="text" name="department" ng-model="department" placeholder="部署／役職を入力" required>
+                      <ul ng-messages="entryForm.department.$error" ng-if="entryForm.department.$dirty && entryForm.department.$invalid">
+                        <li ng-message="required">部署／役職を入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>メールアドレス</th>
+                    <td>
+                      <input class="l" type="text" name="email" ng-model="email" placeholder="bizreach_designer@biz.co.jp" required ui-validate="{ email: 'main.validateEmail($value)' }">
+                      <ul ng-messages="entryForm.email.$error" ng-if="entryForm.email.$dirty && entryForm.email.$invalid">
+                        <li ng-message="required">メールアドレスを入力してください</li>
+                        <li ng-message="email">メールアドレスは正しい形式で入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>電話番号</th>
+                    <td>
+                      <input type="text" name="phone" ng-model="phone" placeholder="090-0000-0000" required ui-validate="{ phone: 'main.validatePhone($value)' }">
+                      <ul ng-messages="entryForm.phone.$error" ng-if="entryForm.phone.$dirty && entryForm.phone.$invalid">
+                        <li ng-message="required">電話番号を入力してください</li>
+                        <li ng-message="phone">電話番号は正しい形式で入力してください</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <div>
+                        <label class="md-checkbox">
+                          <input type="checkbox" id="privacy" ng-model="main.isPrivacyChecked">
+                          <label for="privacy">
+                            <a href="https://www.bizreach.co.jp/privacypolicy/#recruit-personal-handling" target="_blank">個人情報の取り扱い</a>について同意する
+                          </label>
+                        </label>
+                      </div>
+                      <button type="submit" class="md-button" ng-disabled="!main.isPrivacyChecked || entryForm.$invalid">話を聞いてみたい</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="md-footer-inner">
+        <p class="md-footer-copyright"><small>&copy;2016 BizReach, Inc.</small></p>
+        <ul class="md-footer-sns">
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bizreach.co.jp%2Frecruit%2Fdesigner%2F&amp;src=sdkpreparse" target="_blank"><img src="/img/recruit/designer/footer.facebook.svg" alt="facebook"></a></li>
+          <li><a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.bizreach.co.jp%2Frecruit%2Fdesigner%2F&ref_src=twsrc%5Etfw&tw_p=tweetbutton&url=https%3A%2F%2Fwww.bizreach.co.jp%2Frecruit%2Fdesigner%2F" target="_blank"><img src="/img/recruit/designer/footer.twitter.svg" alt="twitter"></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.bizreach.co.jp%2Frecruit%2Fdesigner%2F" target="_blank"><img src="/img/recruit/designer/footer.linkedin.svg" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <div class="md-toast" ng-class="{ visible: main.isVisibleAppliedToast }">
+    応募が完了いたしました
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38779522-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
