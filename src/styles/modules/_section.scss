@@ -4,6 +4,11 @@
   padding-top: 85px;
   padding-bottom: 90px;
 
+  @media screen and (max-width: 640px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   &.gray {
     background-color: #EAEAEA;
   }
@@ -24,6 +29,12 @@
       color: #FFFFFF;
     }
   }
+
+  @media screen and (max-width: 840px) {
+    br {
+      display: none !important;
+    }
+  }
 }
 
 .md-section-inner {
@@ -41,15 +52,30 @@
     font-weight: normal;
     text-align: center;
 
+    @media screen and (max-width: 640px) {
+      line-height: 1;
+      font-size: 40px;
+    }
+
     > span {
       display: block;
       font-size: 20px;
       font-family: sans-serif;
+
+      @media screen and (max-width: 640px) {
+        margin-top: 8px;
+        font-size: 14px;
+      }
     }
 
     & + * {
       margin-top: 36px;
+
+      @media screen and (max-width: 840px) {
+        margin-top: 30px !important;
+      }
     }
+
   }
 
   @media screen and (max-width: 1000px) {
@@ -63,8 +89,24 @@
 
   &.intro {
     font-size: 32px;
+
+    @media screen and (max-width: 780px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 20px;
+    }
   }
- }
+
+  @media screen and (max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.md-section-description + .md-section-description {
+  margin-top: 0.8em;
+}
 
 .md-section-body {
   font-size: 20px;

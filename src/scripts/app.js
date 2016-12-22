@@ -270,9 +270,18 @@ class MainController {
     this.resizeTabContent();
     this.showAppliedToast();
     this.generateImages();
+    this.bindEvents();
 
     this.animationLoadingImages(() => {
       this.animationLogo();
+    });
+  }
+
+  bindEvents () {
+    let $win = $(window);
+
+    $win.on('resize orientationchange', () => {
+      this.resizeTabContent();
     });
   }
 

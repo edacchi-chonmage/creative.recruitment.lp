@@ -45,6 +45,22 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     font-size: 16px;
     text-align: center;
     transition: 1500ms ease-out;
+
+    @media screen and (max-width: 560px) {
+      top: 150px;
+      line-height: 1.4;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 16px;
+    }
+
+    > br {
+      display: none;
+
+      @media screen and (max-width: 560px) {
+        display: block !important;
+      }
+    }
   }
 
   > .md-button {
@@ -70,7 +86,12 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   height: 280px;
   overflow: hidden;
   margin: auto;
-  transition: 1500ms $ease-out-expo;
+  transition: top 1500ms $ease-out-expo;
+
+  @media screen and (max-width: 560px) {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
 
   > img {
     float: left;
@@ -95,6 +116,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     opacity: 0;
     transition: 4000ms ease-out;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   &:after {
@@ -114,11 +136,18 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   bottom: 0;
   left: 0;
   transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
   transform: rotate(45deg) translate(0, -1px);
+  -webkit-transform: rotate(45deg) translate(0, -1px);
   width: 8px;
   height: 0;
   background-color: #FFFF00;
   transition: 300ms $ease-out-expo;
+
+  @media screen and (max-width: 560px) {
+    transform: rotate(45deg) translate(0, -1px);
+    -webkit-transform: rotate(45deg) translate(0, -1px);
+  }
 }
 
 .md-mainvisual-type {
@@ -127,16 +156,24 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   right: 0;
   bottom: 0;
   left: 50px;
-  width: 285px;
-  height: 285px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   transition: 1500ms $ease-out-expo;
+  transition-property: top left;
   mix-blend-mode: multiply;
 
+  @media screen and (max-width: 560px) {
+    left: 30px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+
   > img {
-    width: 300px;
+    width: 100%;
     opacity: 0;
     transition: 2000ms $ease-out-expo;
+    transition-property: opacity margin-left;
   }
 }
 
@@ -149,6 +186,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   height: 66px;
   opacity: 0;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
   transition: $duration-normal $ease-out-expo;
 
   > img {
@@ -178,6 +216,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   height: 66px;
   opacity: 0;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
   transition: $duration-normal $ease-out-expo;
 
   > img {
@@ -214,6 +253,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     height: 150%;
     filter: blur(10px);
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 }
 
@@ -234,6 +274,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   line-height: 1;
   margin-top: -115px;
   transform: translate(0, -100%);
+  -webkit-transform: translate(0, -100%);
   font-size: 30px;
   text-align: center;
 }
@@ -246,6 +287,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   line-height: 1;
   margin-top: -35px;
   transform: translate(0, -100%);
+  -webkit-transform: translate(0, -100%);
   font-size: 60px;
   font-weight: normal;
   text-align: center;
@@ -258,6 +300,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   width: 100%;
   line-height: 1;
   transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   font-size: 22px;
   text-align: center;
 }
@@ -268,6 +311,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   left: 50%;
   margin-top: 70px;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
 }
 
 .md-mainvisual-next {
@@ -309,6 +353,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     opacity: 0;
     background-color: #000000;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   > div:nth-child(1) {
@@ -319,11 +364,32 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 .md-itemlist {
   margin-top: -72px;
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+  @media screen and (max-width: 840px) {
+    display: block;
+    flex-wrap: none;
+    -webkit-flex-wrap: none;
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: -20px;
+  }
 
   > section {
     margin-top: 72px;
     width: 32%;
+
+    @media screen and (max-width: 840px) {
+      width: auto;
+
+      & + section {
+        margin-top: 30px;
+      }
+    }
   }
 
   > section > figure {
@@ -348,14 +414,14 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   }
 
   > section > h3 {
-    line-height: 1;
+    line-height: 1.4;
     color: #606DB8;
     font-size: 24px;
     text-align: center;
   }
 
   > section > h3 + * {
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   > section > p {
@@ -366,17 +432,37 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 .md-members {
   display: flex;
+  display: -webkit-flex;
   margin-top: -9px;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: space-around;
+  -webkit-justify-content: space-around;
   list-style: none;
+
+  @media screen and (max-width: 420px) {
+    display: block;
+    flex-wrap: none;
+    -webkit-flex-wrap: none;
+    justify-content: none;
+    -webkit-justify-content: none;
+  }
 
   > li {
     position: relative;
     width: 220px;
-    height: 220px;
     overflow: hidden;
     margin-top: 24px;
+
+    @media screen and (max-width: 760px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 420px) {
+      width: 240px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   > li:before {
@@ -386,11 +472,15 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     left: 0;
     content: '';
     display: block;
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     background-image: url(/img/recruit/designer/frame.members.png);
     background-size: 100% 100%;
     mix-blend-mode: multiply;
+
+    @media screen and (max-width: 420px) {
+      height: 240px;
+    }
   }
 
   > li:after {
@@ -400,10 +490,14 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     left: 0;
     content: '';
     display: block;
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     background-image: url(/img/recruit/designer/frame.members.gutter.png);
     background-size: 100% 100%;
+
+    @media screen and (max-width: 420px) {
+      height: 240px;
+    }
   }
 
   > li > img {
@@ -425,9 +519,27 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   background-color: rgba(129, 139, 196, 0.8);
   opacity: 0;
   color: #FFFFFF;
-  border-radius: 0 110px 110px 0;
+  border-radius: 0 50% 50% 0;
   font-size: 14px;
   transition: 600ms $ease-out-expo;
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    height: 100%;
+    padding-right: 15%;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 420px) {
+    position: static;
+    margin-top: 10px;
+    padding: 0;
+    opacity: 1;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 14px;
+    color: #6A7887;
+  }
 
   > p {
     line-height: 1.6;
@@ -435,12 +547,28 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
   > p + p {
     margin-top: 10px;
+
+    @media screen and (max-width: 420px) {
+      margin-top: 5px;
+    }
   }
 
   > p > small {
     display: block;
     line-height: 1.4;
     font-size: 12px;
+
+    > br {
+      display: block !important;
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: 10px;
+    }
+
+    @media screen and (max-width: 420px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -451,8 +579,11 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 .md-services {
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: space-around;
+  -webkit-justify-content: space-around;
   list-style: none;
   margin-top: -34px;
 
@@ -512,9 +643,22 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   > tbody > tr > th,
   > tbody > tr > td {
     padding: 10px;
+
+    @media screen and (max-width: 640px) {
+      padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    > tbody > tr,
+    > tbody > tr > th,
+    > tbody > tr > td {
+      display: block;
+    }
   }
 
   > tbody > tr > th {
+    width: 200px;
     padding-top: 23px;
     font-size: 14px;
     text-align: right;
@@ -523,6 +667,11 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     &:after {
       content: '*';
       margin-left: 5px;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding-top: 20px;
+      text-align: left;
     }
   }
 
@@ -579,16 +728,20 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     font-size: 14px;
     transition: 300ms $ease-out-expo;
 
+    @media screen and (max-width: 640px) {
+      width: 80%;
+    }
+
     &.l {
       width: 655px;
+
+      @media screen and (max-width: 860px) {
+        width: 100%;
+      }
     }
 
     &.s {
       width: 96px;
-    }
-
-    &.xs {
-      width: 48px;
     }
 
     &.ng-invalid.ng-dirty {
@@ -624,6 +777,10 @@ header {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media screen and (max-width: 1000px) {
+    width: auto;
+  }
 }
 
 header nav {
@@ -632,6 +789,10 @@ header nav {
   float: right;
   display: none;
   opacity: 0;
+
+  @media screen and (max-width: 880px) {
+    display: none !important;
+  }
 
   > ul {
     list-style: none;
@@ -664,6 +825,10 @@ header nav {
   top: 33px;
   left: 0;
   width: 186px;
+
+  @media screen and (max-width: 1060px) {
+    left: 20px;
+  }
 
   img {
     width: 100%;
@@ -699,6 +864,12 @@ footer {
   width: 960px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 1000px) {
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .md-footer-logo {
@@ -730,17 +901,40 @@ footer {
   margin-top: 68px;
   list-style: none;
 
+  @media screen and (max-width: 1000px) {
+    margin-top: 75px;
+  }
+
   > li {
+    position: relative;
     float: left;
     width: 59px;
+    height: 59px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1000px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   > li + li {
     margin-left: 35px;
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 5px;
+    }
+  }
+
+  > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   > li > a > img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -750,17 +944,40 @@ footer {
   font-size: 18px;
   font-weight: bold;
 
+  @media screen and (max-width: 760px) {
+    font-size: 14px;
+  }
+
   &:before {
     content: 'Q.';
     margin-right: 5px;
     font-size: 30px;
+
+    @media screen and (max-width: 760px) {
+      font-size: 26px;
+    }
   }
 }
 
 .md-tab-list {
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
+  list-style: none;
+
+  > li {
+    @media screen and (max-width: 860px) {
+      width: 30%;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 560px) {
+      width: 46%;
+    }
+  }
 
   > li > a {
     position: relative;
@@ -770,6 +987,11 @@ footer {
     color: #FFFFFF;
     font-size: 16px;
     text-decoration: none;
+
+    @media screen and (max-width: 560px) {
+      padding-bottom: 5px;
+      font-size: 12px;
+    }
 
     &:before {
       position: absolute;
@@ -782,6 +1004,11 @@ footer {
       border-radius: 3px;
       opacity: 0;
       transition: 300ms $ease-out-expo;
+
+      @media screen and (max-width: 560px) {
+        height: 2px;
+        border-radius: 1px;
+      }
     }
   }
 
@@ -828,17 +1055,32 @@ footer {
 table.md-tab-contents-item {
   border-collapse: collapse;
 
+  @media screen and (max-width: 560px) {
+    > tbody > tr {
+      display: block;
+    }
+  }
+
   > tbody > tr > th,
   > tbody > tr > td {
     line-height: 2;
     padding: 15px 35px;
     font-size: 14px;
     vertical-align: top;
+
+    @media screen and (max-width: 560px) {
+      display: block;
+      padding: 10px 20px;
+    }
   }
 
   > tbody > tr > th {
     background-color: #EFEFEF;
     text-align: right;
+
+    @media screen and (max-width: 560px) {
+      text-align: left;
+    }
   }
 
   > tbody > tr > td {
