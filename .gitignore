@@ -3,3 +3,5 @@ node_modules/
 bower_components/
 *.zip
 .DS_Store
+
+.node-version
