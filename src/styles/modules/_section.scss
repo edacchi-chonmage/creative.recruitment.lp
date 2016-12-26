@@ -21,8 +21,8 @@
     }
   }
 
-  &.purple {
-    background-color: #616FB6;
+  &.navy {
+    background-color: $basecolor;
     color: #FFFFFF;
 
     > .md-section-inner > h2 {
@@ -46,7 +46,7 @@
 
   > h2 {
     font-size: 30px;
-    color: #606DB8;
+    color: $basecolor;
     font-family: Montserrat;
     font-size: 48px;
     font-weight: normal;
@@ -73,6 +73,7 @@
 
       @media screen and (max-width: 840px) {
         margin-top: 30px !important;
+        text-align: left;
       }
     }
 
@@ -106,6 +107,7 @@
 
 .md-section-description + .md-section-description {
   margin-top: 0.8em;
+  text-align: left;
 }
 
 .md-section-body {

@@ -1,9 +1,9 @@
 *::selection {
   background: rgba(255, 255, 0, 0.5);
-  color: #6A7887;
+  color: $basecolor;
 }
 
 body {
-  color: #6A7887;
+  color: $basecolor;
   font: 16px/1.8 'Noto Sans Japanese' sans-serif;
 }

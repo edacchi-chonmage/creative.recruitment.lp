@@ -1,5 +1,5 @@
 // Common Styles
-@import 'variables/_animation.scss';
+@import 'variables/_variables.scss';
 
 // Common Styles
 @import 'common/_reset.scss';
@@ -387,7 +387,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
       width: auto;
 
       & + section {
-        margin-top: 30px;
+        margin: 30px 0 0 !important;
       }
     }
   }
@@ -415,7 +415,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
   > section > h3 {
     line-height: 1.4;
-    color: #606DB8;
+    color: $basecolor;
     font-size: 24px;
     text-align: center;
   }
@@ -516,7 +516,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
   height: 220px;
   padding: 25px 45px 25px 15px;
   overflow: hidden;
-  background-color: rgba(129, 139, 196, 0.8);
+  background-color: rgba(34, 75, 115, 0.8);
   opacity: 0;
   color: #FFFFFF;
   border-radius: 0 50% 50% 0;
@@ -693,7 +693,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
       &:hover {
         background-color: #FFFFFF;
-        color: #606DB8;
+        color: $basecolor;;
       }
     }
 
@@ -745,7 +745,7 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
     }
 
     &.ng-invalid.ng-dirty {
-      border: 2px solid #FF7878;
+      border: 2px solid $error;
     }
   }
 
@@ -883,6 +883,7 @@ footer {
 }
 
 .md-footer-copyright {
+  font-family: Montserrat;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -893,17 +894,23 @@ footer {
 }
 
 .md-footer-sns {
+  margin-top: 50px;
+  float: right;
+
+  .md-footer-sns-title {
+    font-family: Montserrat;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.md-footer-sns-button {
   @extend .clearfix;
 
   z-index: 2;
   position: relative;
-  float: right;
-  margin-top: 68px;
+  margin-top: 10px;
   list-style: none;
-
-  @media screen and (max-width: 1000px) {
-    margin-top: 75px;
-  }
 
   > li {
     position: relative;
@@ -919,11 +926,7 @@ footer {
   }
 
   > li + li {
-    margin-left: 35px;
-
-    @media screen and (max-width: 1000px) {
-      margin-left: 5px;
-    }
+    margin-left: 10px;
   }
 
   > li > a {
@@ -940,7 +943,7 @@ footer {
 
 .md-question {
   margin-left: 15px;
-  color: #606DB8;
+  color: $basecolor;
   font-size: 18px;
   font-weight: bold;
 
@@ -982,10 +985,11 @@ footer {
   > li > a {
     position: relative;
     display: block;
-    line-height: 1.4;
-    padding-bottom: 10px;
+    height: 36px;
+    line-height: 1.2;
+    padding-bottom: 4px;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
 
     @media screen and (max-width: 560px) {
@@ -999,9 +1003,8 @@ footer {
       bottom: 0;
       left: 0;
       content: '';
-      height: 6px;
+      height: 2px;
       background-color: #FFFFFF;
-      border-radius: 3px;
       opacity: 0;
       transition: 300ms $ease-out-expo;
 
@@ -1075,7 +1078,7 @@ table.md-tab-contents-item {
   }
 
   > tbody > tr > th {
-    background-color: #EFEFEF;
+    background-color: #EAEAEA;
     text-align: right;
 
     @media screen and (max-width: 560px) {
@@ -1197,7 +1200,7 @@ table.md-tab-contents-item {
 
 ul[ng-messages] {
   list-style: none;
-  color: #FF7878;
+  color: $error;
   font-size: 14px;
 }
 

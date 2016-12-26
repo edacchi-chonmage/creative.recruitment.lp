@@ -5,15 +5,15 @@
   line-height: 40px;
   width: 285px;
   background-color: #FFFFFF;
-  border: 3px solid #606DB8;
-  color: #606DB8;
+  border: 3px solid $basecolor;
+  color: $basecolor;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
   transition: $duration-normal $ease-out-expo;
 
   &:hover {
-    background-color: #606DB8;
+    background-color: $basecolor;
     color: #FFFFFF;
   }
 
