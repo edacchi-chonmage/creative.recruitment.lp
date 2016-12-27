@@ -669,6 +669,10 @@ $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
       margin-left: 5px;
     }
 
+    &.norequired:after {
+      opacity: 0;
+    }
+
     @media screen and (max-width: 640px) {
       padding-top: 20px;
       text-align: left;

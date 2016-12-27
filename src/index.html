@@ -970,11 +970,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>電話番号</th>
+                    <th class="norequired">電話番号</th>
                     <td>
-                      <input type="text" name="phone" ng-model="phone" placeholder="090-0000-0000" required ui-validate="{ phone: 'main.validatePhone($value)' }">
+                      <input type="text" name="phone" ng-model="phone" placeholder="090-0000-0000" ui-validate="{ phone: 'main.validatePhone($value)' }">
                       <ul ng-messages="entryForm.phone.$error" ng-if="entryForm.phone.$dirty && entryForm.phone.$invalid">
-                        <li ng-message="required">電話番号を入力してください</li>
                         <li ng-message="phone">電話番号は正しい形式で入力してください</li>
                       </ul>
                     </td>

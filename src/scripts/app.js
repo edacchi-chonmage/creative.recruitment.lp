@@ -520,7 +520,11 @@ class MainController {
   }
 
   validatePhone (value) {
-    return /^[0-9]{2,4}-?[0-9]{2,4}-?[0-9]{3,4}$/.test(value);
+    if (String(value).length > 0) {
+      return /^[0-9]{2,4}-?[0-9]{2,4}-?[0-9]{3,4}$/.test(value);
+    } else {
+      return true;
+    }
   }
 }
 
