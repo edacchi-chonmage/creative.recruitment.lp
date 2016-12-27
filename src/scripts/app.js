@@ -1,7 +1,7 @@
 import initScrollController from './scroll-animations.js';
 
 const BAR_MAX_HEIGHT = 336;
-const KV_LENGTH = 7;
+const KV_LENGTH = 6;
 
 class MainController {
   constructor (
@@ -22,8 +22,7 @@ class MainController {
         '/img/recruit/designer/visual.main.3.jpg',
         '/img/recruit/designer/visual.main.4.jpg',
         '/img/recruit/designer/visual.main.5.jpg',
-        '/img/recruit/designer/visual.main.6.jpg',
-        '/img/recruit/designer/visual.main.7.jpg'
+        '/img/recruit/designer/visual.main.6.jpg'
       ],
       mainLogoGrid: [
         '/img/recruit/designer/logo.001.png',
